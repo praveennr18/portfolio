@@ -1,0 +1,126 @@
+.about {
+    padding: 4rem 6rem;
+    background-color: #222;
+    color: #f4f4f4;
+  }
+  
+  .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #00bcd4;
+  }
+  
+  .about-section {
+    margin-bottom: 3rem;
+  }
+  
+  .about-section h3 {
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    border-left: 4px solid #00bcd4;
+    padding-left: 0.75rem;
+  }
+  
+  .about-section ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    color: #ccc;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 1rem;
+  }
+  .skills-bars {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .skill-bar {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    color: #ddd;
+    margin-bottom: 0.25rem;
+  }
+  
+  .bar-bg {
+    background: #333;
+    height: 10px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  
+  .bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #00bcd4, #005f6b);
+    border-radius: 6px;
+  }
+  .skills-bars {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .skill-bar {
+    display: flex;
+    flex-direction: column;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.1);
+  }
+  
+  .skill-bar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 188, 212, 0.3);
+  }
+  
+  .skill-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #f4f4f4;
+    margin-bottom: 0.5rem;
+  }
+  
+  .bar-bg {
+    background: linear-gradient(to right, #333, #222);
+    height: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .bar-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #00bcd4, #0097a7);
+    box-shadow: 0 0 10px #00bcd4;
+    transition: width 1s ease;
+  }
+      

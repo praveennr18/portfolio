@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* This takes all the vertical space between header and footer */
+.main-spacer {
+  flex: 1;
+}
+
+
+/* Reserve space for body content later */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+.bar-fill::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: #00e5ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00e5ff;
+}
+

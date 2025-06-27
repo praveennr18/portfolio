@@ -1,0 +1,71 @@
+.navbar {
+    width: 100%;
+    background: rgba(18, 18, 18, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 1rem 4rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeInDown 0.6s ease-out;
+    
+  }
+  
+
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem; /* Increased spacing */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Glowing underline hover effect */
+  .navbar-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #00bcd4;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .navbar-links li a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-links li a:hover {
+    color: #00bcd4;
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
