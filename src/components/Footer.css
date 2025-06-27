@@ -20,4 +20,21 @@
       transform: translateY(0);
     }
   }
-  
+
+/* Responsive Design */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 1.2rem 0;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 1rem 0;
+    font-size: 0.85rem;
+  }
+}

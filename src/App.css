@@ -22,8 +22,9 @@ body {
 /* Reserve space for body content later */
 .main-content {
   flex: 1;
-  padding: 2rem;
+  padding: 0;
 }
+
 .bar-fill::after {
   content: '';
   position: absolute;
@@ -36,4 +37,6 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 10px #00e5ff;
 }
+
+
 

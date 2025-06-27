@@ -1,57 +1,4 @@
 .public-profiles {
-    padding: 4rem 6rem;
-    background: #0a0a0a;
-    color: white;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 2rem;
-    color: #00e5ff;
-    margin-bottom: 2rem;
-  }
-  
-  .profiles-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-  }
-  
-  .profile-card {
-    width: 160px;
-    height: 160px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 2px solid;
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
-    color: white;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease, background 0.3s ease;
-    box-shadow: 0 6px 18px rgba(0, 188, 212, 0.1);
-  }
-  
-  .profile-card:hover {
-    transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 12px 24px rgba(0, 188, 212, 0.2);
-  }
-  
-  .profile-card .icon {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .profile-card span {
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-align: center;
-  }
-  .public-profiles {
     padding: 5rem 6rem;
     background: #0b0b0b;
     color: white;
@@ -127,5 +74,59 @@
   .profile-card:hover .tooltip {
     opacity: 1;
   }
-  
-  
+
+/* Responsive Design */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .public-profiles {
+    padding: 4rem 2rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .profiles-grid {
+    gap: 2rem;
+  }
+  .profile-card {
+    width: 180px;
+    height: 180px;
+  }
+  .profile-card .icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Large Mobiles */
+@media screen and (max-width: 480px) {
+  .public-profiles {
+    padding: 3rem 1rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .profiles-grid {
+    gap: 1.5rem;
+  }
+  .profile-card {
+    width: 140px;
+    height: 140px;
+  }
+  .profile-card .icon {
+    font-size: 2rem;
+  }
+  .profile-card span {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobiles */
+@media screen and (max-width: 320px) {
+  .public-profiles {
+    padding: 2rem 0.5rem;
+  }
+  .profile-card {
+    width: 120px;
+    height: 120px;
+  }
+}

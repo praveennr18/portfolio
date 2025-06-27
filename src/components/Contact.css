@@ -45,4 +45,48 @@
     transform: scale(1.05);
     background: linear-gradient(to right, #00e5ff, #00bcd4);
   }
-  
+
+/* Responsive Design */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .contact {
+    padding: 4rem 2rem;
+  }
+  .contact-container {
+    padding: 1.5rem 2rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large Mobiles */
+@media screen and (max-width: 480px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+  .contact-container {
+    padding: 1.5rem;
+  }
+  .section-title {
+    font-size: 1.6rem;
+  }
+  .contact-text {
+    font-size: 1rem;
+  }
+  .contact-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Small Mobiles */
+@media screen and (max-width: 320px) {
+  .contact {
+    padding: 2rem 0.5rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+}

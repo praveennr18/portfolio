@@ -45,38 +45,7 @@
     color: #ddd;
     margin-top: 1rem;
   }
-  .skills-bars {
-    margin-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  .skill-bar {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .skill-info {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.95rem;
-    color: #ddd;
-    margin-bottom: 0.25rem;
-  }
-  
-  .bar-bg {
-    background: #333;
-    height: 10px;
-    border-radius: 6px;
-    overflow: hidden;
-  }
-  
-  .bar-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #00bcd4, #005f6b);
-    border-radius: 6px;
-  }
+
   .skills-bars {
     margin-top: 2rem;
     display: flex;
@@ -123,4 +92,44 @@
     box-shadow: 0 0 10px #00bcd4;
     transition: width 1s ease;
   }
-      
+
+/* Responsive Design */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 4rem 2rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .about-section h3 {
+    font-size: 1.4rem;
+  }
+}
+
+/* Large Mobiles */
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+  .section-title {
+    font-size: 1.8rem;
+  }
+  .about-section h3 {
+    font-size: 1.3rem;
+  }
+  .about-section ul {
+    font-size: 1rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small Mobiles */
+@media screen and (max-width: 320px) {
+  .about {
+    padding: 2rem 0.5rem;
+  }
+}

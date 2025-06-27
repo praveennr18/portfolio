@@ -2,13 +2,21 @@ import './Projects.css';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
+// ✅ Import images properly
+import hospitalImg from '../assets/images/hospital.png';
+import carImg from '../assets/images/car.png';
+import heartImg from '../assets/images/Heart.png';
+import voiceImg from '../assets/images/voice.jpg';
+import weatherImg from '../assets/images/weather.png';
+import houseImg from '../assets/images/house.png';
+
 const projects = [
   {
     title: "Online Hospital System",
     description: "A platform enabling doctors to interact with patients effectively.",
     tech: "HTML, CSS, JavaScript, Node.js, Express.js, PostgreSQL",
     github: "https://github.com/praveennr18/online-hospital-system",
-    image: "/images/hospital.png"
+    image: hospitalImg
   },
   {
     title: "Used Cars Price Prediction",
@@ -16,21 +24,21 @@ const projects = [
     tech: "Python, Sklearn, Pandas, Flask",
     github: "https://github.com/praveennr18/car_price",
     hosted: "https://car-price-g3qx.onrender.com",
-    image: "/images/car.png"
+    image: carImg
   },
   {
     title: "Heart Disease Prediction System",
     description: "Machine learning system to predict heart disease risk.",
     tech: "Python, Scikit-learn, Django",
     github: "https://github.com/praveennr18/heart_disease",
-    image: "/images/Heart.png"
+    image: heartImg
   },
   {
     title: "Personal Voice Assistant",
     description: "Voice-controlled assistant built using Python libraries.",
     tech: "Python, ecapture, requests, Wikipedia",
     github: "https://github.com/praveennr18/personal-voice-assistant-",
-    image: "/images/voice.jpg"
+    image: voiceImg
   },
   {
     title: "Weather App",
@@ -38,14 +46,14 @@ const projects = [
     tech: "HTML, CSS, JavaScript",
     github: "https://github.com/praveennr18/weather",
     hosted: "https://praveennr18.github.io/weather/",
-    image: "/images/weather.png"
+    image: weatherImg
   },
   {
     title: "House Price Prediction",
     description: "Random Forest model to predict house prices.",
     tech: "Python, Sklearn, Pandas, Flask",
     github: "https://github.com/praveennr18/house-price-predictor",
-    image: "/images/house.png"
+    image: houseImg
   }
 ];
 
